@@ -1,22 +1,22 @@
 package fastcampus.validation.annotation;
 
-import fastcampus.validation.validator.PhoneNumberValidator;
 import fastcampus.validation.validator.YearMonthValidator;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
+import jakarta.validation.constraints.NotBlank;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-// validation 용 custom annotation template
-@Constraint(validatedBy = PhoneNumberValidator.class)
+@Constraint(validatedBy = YearMonthValidator.class)
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface PhoneNumber {
-    String message() default "핸드폰 번호 양식에 맞지 않습니다. ex) 000-0000-0000";
-    String regexp() default "\\d{2,3}-\\d{3,4}-\\d{4}$";
+@NotBlank
+public @interface YearMonth {
+    String message() default "year month 양식에 맞지 않습니다. ex) 20240101";
+    String pattern() default "yyyyMM";
     Class<?>[] groups() default { };
     Class<? extends Payload>[] payload() default { };
 }

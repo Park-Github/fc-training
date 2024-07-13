@@ -4,7 +4,7 @@ package fastcampus.validation.model;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import fastcampus.validation.annotation.PhoneNumber;
-import jakarta.validation.Valid;
+import fastcampus.validation.annotation.YearMonth;
 import jakarta.validation.constraints.*;
 import lombok.*;
 
@@ -44,6 +44,9 @@ public class User {
 
     @FutureOrPresent //현재 또는 미래의 날짜만 지정
     private LocalDateTime registerDate;
+
+    @YearMonth(pattern = "yyyy-MM")
+    private String BirthDayYearMonth;
 
     @AssertTrue(message = "name or nickname 은 존재해야 합니다.") // return 값이 false 일 때 에러 메시지 출력
     public boolean isNameCheck() {

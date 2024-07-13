@@ -1,6 +1,7 @@
 package fastcampus.validation.validator;
 
 import fastcampus.validation.annotation.PhoneNumber;
+import fastcampus.validation.annotation.YearMonth;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 

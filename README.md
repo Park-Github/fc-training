@@ -12,16 +12,16 @@
 - Spring Framework
 - Mysql
 - Java 
-
+- - -
 ## Ch.00 - 개발 환경 설치
 
 ### 학습 내용 
     - IntelliJ IDE 설치 및 세팅 방법
     - Spring Initializr 를 사용한 Spring Project 생성법
 
-### 실습 프로젝트 경로 
+### 프로젝트 경로 
   - /helloWorld
-
+- - -
 ## Ch.01 - Web & HTTP 개론
 
 ### 학습 내용
@@ -32,7 +32,7 @@
     - OSI 7 Layers
 
 ### 프로젝트 경로
-
+- - -
 ## Ch.02 - REST API 실습
 
 ### 학습 내용
@@ -41,7 +41,7 @@
 
 ### 프로젝트 경로 
 - /rest-api
-
+- - -
 ## Ch.03 - Spring Framework의 여러 기능 학습
 
 ### 학습 내용
@@ -73,7 +73,7 @@
 - /rest-api
 - /exception
 - /validation
-
+- - -
 ## Ch.04 - Memory Database CRUD 구현
 
 ### 학습 내용
@@ -85,7 +85,7 @@
     
 ### 프로젝트 경로 
 - /memorydb
-
+- - -
 ## Ch.05 - MySQL 설치 및 쿼리 실습
 
 ### 학습 내용
@@ -96,7 +96,7 @@
 
 ### 프로젝트 경로 
 - /docker-compose
-
+- - -
 ## Ch.06 - ORM
 
 ### 학습 내용
@@ -109,7 +109,7 @@
 
 ### 프로젝트 경로 
 - /jpa
-
+- - -
 ## Ch.07 - Memory DB -> JPA Migration
 
 ### 학습 내용
@@ -126,7 +126,7 @@
 
 ### 프로젝트 경로 
 - /memorydbToJpa
-
+- - -
 ## Ch.08 - 게시판 시스템 설계 및 구현
 
 ### 학습 내용
@@ -134,3 +134,4 @@
    
 ### 프로젝트 경로 
 - /simple-board
+- - -

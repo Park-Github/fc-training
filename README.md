@@ -39,6 +39,9 @@
     - 간단한 GET / POST / PUT / DELETE API 설계
     - Postman API 테스트 프로그램으로 설계한 API 테스트
 
+### 구현 기능
+    Rest API(GET, POST, PUT, DELETE)
+
 ### 프로젝트 경로 
 - /rest-api
 - - -
@@ -48,8 +51,10 @@
     - Spring에서 Client로 Response를 보내는 방법
       - String, Object, ResponseEntity, @ResponseBody
       - status code 설정
+
     - ObjectMapper의 역할
       - Client의 Json - Server의 DTO 변환
+
     - Exception 처리 방법
       - Rest API 에서 발생한 예외를 예외 처리용 클래스에서 처리
         - @RestControllerAdvice
@@ -61,14 +66,24 @@
           - HTTP code , HTTP message를 보낼 필드
         - 예외처리 우선순위 지정 방법
           - @Order
+
     - Spring Validation
       - 필드 검증 어노테이션
         - @Size, @NotNull, @NotBlank, @NotEmpty ...
+
       - 검증할 Request Data
         - @Valid
+
       - BindingResult
         - 검증 오류가 났을 때 오류 정보를 담는 객체
-        
+
+### 구현 기능
+      여러 타입의 데이터 응답하기
+        - String, Object, ResponseEntity
+      
+      예외처리 기능
+
+      사용자 정보 유효성 검증 기능
 ### 프로젝트 경로 
 - /rest-api
 - /exception
@@ -85,6 +100,13 @@
     
 ### 프로젝트 경로 
 - /memorydb
+
+### 구현 기능
+      메모리에 사용자 DB 구현
+        - 사용자 정보 생성
+        - 사용자 정보 읽기
+        - 사용자 정보 갱신
+        - 사용자 정보 삭제
 - - -
 ## Ch.05 - MySQL 설치 및 쿼리 실습
 
@@ -130,8 +152,15 @@
 ## Ch.08 - 게시판 시스템 설계 및 구현
 
 ### 학습 내용
-  - 
+      - ERD 설계
+      - JPA 연관관계 설정
+        @OneToMany, @ManyToOne
+      - Paging 구현법
    
+### 구현 기능
+      게시판 기능
+        - 게시글 조회 , 작성, 삭제 
+        - 페이징 기능
 ### 프로젝트 경로 
 - /simple-board
 - - -
